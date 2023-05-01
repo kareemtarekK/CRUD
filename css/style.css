@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    margin-top: 40px;
+}
+header{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.div_search{
+    background-color: cyan;
+    border-radius: 7px;
+width: 21%;
+height: 5vh;}
+.div_search .form input{
+padding: 10px 20px;
+border: none;
+background-color: cyan;
+outline: none;
+}
+.div_search .form i{
+    font-size: 17px;
+    transform: translateX(7px);
+}
+.div_button{width: 21%;
+background-color: cyan;
+ border-radius: 7px;
+ height: 5vh;
+ text-align: center;
+}
+.div_button button{
+    padding: 10px 60px;
+    border: none;
+    outline: none;
+    background-color: cyan;
+    cursor: pointer;
+}
+.div_button i{
+    transform: translateX(-3px);
+}
+.show_modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, .7);
+}
+.button_form{
+    width: 40%;
+    background-color: cornflowerblue;
+    margin: auto;
+    padding: 60px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.button_form > i{
+    padding: 25px;
+    font-size: 75px;
+}
+.button_form .second_form input{
+    padding: 15px 90px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border:none;
+    outline: none;
+}
+.button_form .save{
+    background-color: aquamarine;
+    padding: 10px 15px;
+    font-size: 27px;
+    border: solid #888 1px;
+    border-radius: 7px;
+    position: relative;
+    top: 30px;
+    cursor: wait;
+}
+.button_form .close{
+    background-color: transparent;
+    position: relative;
+    top: -410px;
+    left: 270px;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+.button_form .close i{
+    font-size: 30px;
+    color:black ;
+}
+.button_form .second_form input::placeholder{
+    font-size: 15px;
+    transform: translateX(-65px)
+}
+.div_table{width: 100%;
+margin-top: 50px;}
+.div_table table{
+    width: 80%;
+    border-collapse:collapse;
+    margin: auto;
+    cursor:progress;
+}
+.div_table table th,td{
+    padding: 20px 25px;
+    border: 1.5px solid #888;
+}
+.div_table table th{
+    font-size: 25px;
+    background-color: violet;
+}
+.div_table table td{
+    font-size: 18px;
+    color: #444;
+    background-color: pink;
+}
+body{
+    background-color: yellow;
+}
+tbody tr .blue{
+    color: blue;
+}
+tbody tr .red{
+    color: red;
+}
+tbody tr .test1{
+    transition: transform 1s;
+}
+tbody tr .test1:hover{
+    transform: rotate(360deg);
+}
+tbody tr .test2{
+transition: transform 1s;
+}
+tbody tr .test2:hover {
+    transform: rotate(360deg);
+}
+main .over_lay .button_form{
+    transition: background-color 1s;
+}
+main .over_lay .button_form:hover{
+background-color: hsl(50,30%, 30%);
+
+}
+main .over_lay .button_form .close{
+    transition: background-color 1.5s;
+}
+main .over_lay .button_form .close:hover{
+    background-color: hsl(230,70%, 70%);
+}
+main .over_lay .button_form .save {
+    transition: transform 1s;
+}
+main .over_lay .button_form .save:hover {
+   transform: rotate(360deg);
+}
+main .over_lay .button_form input{
+    transition: transform 1s;
+}
+main .over_lay .button_form input:hover {
+    transform: translateX(25px);
+}
+main .over_lay .button_form i{
+    transition: transform 1.5s;
+}
+main .over_lay .button_form i:hover {
+    transform: rotate(50deg);
+}
+main header .div_search{
+    transition: padding 1s;
+}
+main header .div_search:hover {
+    padding: 15px 30px;
+}
+main header .div_button {
+    transition: padding 1s;
+}
+main header .div_button:hover {
+    padding: 15px 30px;
+}
+main .div_table tr th{
+    transition: bachground-color 1.5s;
+}
+main .div_table tr th:hover{
+    background-color: rgb(60, 57, 156);
+}
+@media(max-width:768px){
+    .div_table{
+        width: fit-content;
+    }
+    #search{
+        width: 150px;
+        
+    }
+    .form{
+        width: 200px;
+    }
+    .addnewperson{
+        width: 200px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .div_search{
+        padding: 10px;
+        width: 200px;
+    }
+    .close{
+       transform: translateX(-150px);
+    }
+}

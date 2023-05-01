@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="CRUD" content="create_read_update_delete">
+        <title>CRUD</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="div_search">
+                    <!-- div_search -->
+                    <form class="form" id="form_search">
+                        <label for="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                        <input type="search" id="search" placeholder="Search">
+                    </form>
+                </div>
+                <div class="div_button">
+                    <button class="addnewperson">
+                        <i class="fa-solid fa-user"></i>
+                        Add_New_Person</button>
+                </div> <!-- div_button -->
+            </header>
+            <section class="over_lay">
+                <div class="button_form">
+                    <i class="fa-solid fa-user"></i>
+                    <form class="second_form">
+                        <input type="text" placeholder="Name" id="name">
+                        <input type="text" placeholder="Phone" id="phone">
+                        <input type="email" placeholder="Email" id="email">
+                        <input type="text" placeholder="Home_address" id="address">
+                    </form>
+                    <button class="save" id="save_b">
+                        <i class="fa-solid fa-floppy-disk"></i>Save
+                    </button>
+                    <button class="close">
+                        <i class="fa-regular fa-rectangle-xmark"></i>
+                    </button>
+                </div><!-- div_showing_form_modal -->
+            </section>
+            <div class="div_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#id</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
+        </main>
+
+
+
+
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
